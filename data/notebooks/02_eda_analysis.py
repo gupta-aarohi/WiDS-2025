@@ -15,6 +15,21 @@ df.columns = [
     "Glazing_Area", "Glazing_Distribution",
     "Heating_Load", "Cooling_Load"
 ]
+print('Missing values per column:')
+print(df.isnull().sum())
+
+# Based on common interpretations of the ENB2012 dataset:
+# X1: Relative Compactness
+# X2: Surface Area
+# X3: Wall Area
+# X4: Roof Area
+# X5: Overall Height
+# X6: Orientation
+# X7: Glazing Area
+# X8: Glazing Area Distribution
+# Y1: Heating Load
+# Y2: Cooling Load
+ 
 # Correlation heatmap
 plt.figure(figsize=(10,6))
 sns.heatmap(df.corr(), annot=True, cmap="coolwarm")
