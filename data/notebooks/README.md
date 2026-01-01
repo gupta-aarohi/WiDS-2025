@@ -1,4 +1,6 @@
 ## Summary WEEK-1:
+## Calculate CO₂ Estimation
+'Fuel Consumption' and 'Emission Factor' columns (or define reasonable defaults if not explicit) and calculate CO₂ = Fuel Consumption × Emission Factor.
 
 ### Data Analysis Key Findings
 
